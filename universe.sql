@@ -127,7 +127,7 @@ CREATE TABLE public.moon (
     planet_id integer,
     size_km integer,
     distance_p_km integer,
-    life boolean
+    life boolean NOT NULL
 );
 
 
@@ -201,7 +201,7 @@ CREATE TABLE public.star (
     star_id integer NOT NULL,
     name character varying(30),
     galaxy_id integer,
-    color text,
+    color text NOT NULL,
     temperature_c integer,
     size integer
 );
